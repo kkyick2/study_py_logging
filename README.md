@@ -99,7 +99,7 @@ pip install -r requirements.txt
 ## Example3: Detail Project Structure with environment variables (json config file)
 
 ```sh
-(venv) C:\Users\jackyyick\projects_local\python\study_py_logging>python src3\main.py
+(venv) C:\Users\xxx\projects_local\python\study_py_logging>python src3\main.py
 2024-10-03 00:49:43,060 - INFO - __main__ - Program started
 2024-10-03 00:49:43,060 - INFO - data_processing.processor - Pre-processing data
 2024-10-03 00:49:43,061 - INFO - data_processing.processor - Data pre-processing complete
