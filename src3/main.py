@@ -2,6 +2,7 @@
 import logging
 import logging.config
 import os
+import json
 from datetime import datetime
 
 from data_processing.processor import process_data
@@ -19,21 +20,25 @@ LOG_DIR = "./logs"
 def setup_logging():
     """Load logging configuration"""
     log_configs = {
-        "dev": "logging.dev.ini", 
-        "prod": "logging.prod.ini"
+        "dev": "logging.dev.json", 
+        "prod": "logging.prod.json"
         }
-    config = log_configs.get(os.environ["ENV"], "logging.dev.ini")
+    config = log_configs.get(os.environ["ENV"], "logging.dev.json")
     config_path = "/".join([CONFIG_DIR, config])
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_file = f"{LOG_DIR}/{timestamp}.log"
 
-    logging.config.fileConfig(
-        config_path,
-        disable_existing_loggers=False,
-        defaults={
-            "logfilename": f"{LOG_DIR}/{timestamp}.log"
-            },
-    )
+    with open(config_path, 'r') as f:
+        config = json.load(f)
+
+    # Update the file handler's filename
+    for handler in config['handlers'].values():
+        if handler['class'] == 'logging.FileHandler':
+            handler['filename'] = log_file
+
+    logging.config.dictConfig(config)
+    
 
 def main_process_data():
     """Dummy data processing function"""

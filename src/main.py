@@ -30,4 +30,5 @@ if __name__ == "__main__":
     process_data()
     train()
     main_process_data()
+    logger.warning("Program warning log test")
     logger.info("Program finished")

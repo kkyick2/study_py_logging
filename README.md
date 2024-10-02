@@ -17,10 +17,11 @@ https://github.com/julian-west/e4ds-snippets/tree/master/best-practices/setting-
       └── trainer.py
 
 C:\Users\xxx\projects_local\python\study_py_logging>python src\main.py
-2024-10-02 23:54:47,285 - INFO - __main__ - Program started
-2024-10-02 23:54:47,286 - INFO - __main__ - Main Pre-processing data
-2024-10-02 23:54:47,286 - INFO - __main__ - Main Data pre-processing complete
-2024-10-02 23:54:47,287 - INFO - __main__ - Program finished
+2024-10-03 00:49:32,894 - INFO - __main__ - Program started
+2024-10-03 00:49:32,895 - INFO - __main__ - Main Pre-processing data
+2024-10-03 00:49:32,895 - INFO - __main__ - Main Data pre-processing complete
+2024-10-03 00:49:32,896 - WARNING - __main__ - Program warning log test
+2024-10-03 00:49:32,896 - INFO - __main__ - Program finished
 
 ```
 
@@ -37,17 +38,18 @@ C:\Users\xxx\projects_local\python\study_py_logging>python src\main.py
       └── trainer.py
 
 C:\Users\xxx\projects_local\python\study_py_logging>python src1\main.py
-2024-10-02 23:51:13,886 - INFO - __main__ - Program started
-2024-10-02 23:51:13,886 - INFO - data_processing.processor - Pre-processing data
-2024-10-02 23:51:13,887 - INFO - data_processing.processor - Data pre-processing complete
-2024-10-02 23:51:13,887 - INFO - model_training.trainer - Training model
-2024-10-02 23:51:13,888 - INFO - model_training.trainer - Model training complete
-2024-10-02 23:51:13,888 - INFO - __main__ - Main Pre-processing data
-2024-10-02 23:51:13,889 - INFO - __main__ - Main Data pre-processing complete
-2024-10-02 23:51:13,889 - INFO - __main__ - Program finished
+2024-10-03 00:49:36,755 - INFO - __main__ - Program started
+2024-10-03 00:49:36,756 - INFO - data_processing.processor - Pre-processing data
+2024-10-03 00:49:36,756 - INFO - data_processing.processor - Data pre-processing complete
+2024-10-03 00:49:36,757 - INFO - model_training.trainer - Training model
+2024-10-03 00:49:36,757 - INFO - model_training.trainer - Model training complete
+2024-10-03 00:49:36,757 - INFO - __main__ - Main Pre-processing data
+2024-10-03 00:49:36,758 - INFO - __main__ - Main Data pre-processing complete
+2024-10-03 00:49:36,758 - WARNING - __main__ - Program warning log test
+2024-10-03 00:49:36,758 - INFO - __main__ - Program finished
 ```
 
-## Example2: Detail Project Structure with environment variables
+## Example2: Detail Project Structure with environment variables (ini config file)
 
 ### Getting started
 
@@ -83,12 +85,28 @@ pip install -r requirements.txt
     └── main.py                      <- main function
 
 (venv) C:\Users\xxx\projects_local\python\study_py_logging>python src2\main.py
-2024-10-02 23:55:21,802 - INFO - __main__ - Program started
-2024-10-02 23:55:21,803 - INFO - data_processing.processor - Pre-processing data
-2024-10-02 23:55:21,804 - INFO - data_processing.processor - Data pre-processing complete
-2024-10-02 23:55:21,804 - INFO - model_training.trainer - Training model
-2024-10-02 23:55:21,805 - INFO - model_training.trainer - Model training complete
-2024-10-02 23:55:21,805 - INFO - __main__ - Main Pre-processing data
-2024-10-02 23:55:21,805 - INFO - __main__ - Main Data pre-processing complete
-2024-10-02 23:55:21,817 - INFO - __main__ - Program finished
+2024-10-03 00:49:39,973 - INFO - __main__ - Program started
+2024-10-03 00:49:39,973 - INFO - data_processing.processor - Pre-processing data
+2024-10-03 00:49:39,974 - INFO - data_processing.processor - Data pre-processing complete
+2024-10-03 00:49:39,974 - INFO - model_training.trainer - Training model
+2024-10-03 00:49:39,975 - INFO - model_training.trainer - Model training complete
+2024-10-03 00:49:39,975 - INFO - __main__ - Main Pre-processing data
+2024-10-03 00:49:39,976 - INFO - __main__ - Main Data pre-processing complete
+2024-10-03 00:49:39,977 - WARNING - __main__ - Program warning log test
+2024-10-03 00:49:39,977 - INFO - __main__ - Program finished
+```
+
+## Example3: Detail Project Structure with environment variables (json config file)
+
+```sh
+(venv) C:\Users\jackyyick\projects_local\python\study_py_logging>python src3\main.py
+2024-10-03 00:49:43,060 - INFO - __main__ - Program started
+2024-10-03 00:49:43,060 - INFO - data_processing.processor - Pre-processing data
+2024-10-03 00:49:43,061 - INFO - data_processing.processor - Data pre-processing complete
+2024-10-03 00:49:43,061 - INFO - model_training.trainer - Training model
+2024-10-03 00:49:43,062 - INFO - model_training.trainer - Model training complete
+2024-10-03 00:49:43,062 - INFO - __main__ - Main Pre-processing data
+2024-10-03 00:49:43,063 - INFO - __main__ - Main Data pre-processing complete
+2024-10-03 00:49:43,065 - WARNING - __main__ - Program warning log test
+2024-10-03 00:49:43,065 - INFO - __main__ - Program finished
 ```
