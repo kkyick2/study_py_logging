@@ -110,3 +110,9 @@ pip install -r requirements.txt
 2024-10-03 00:49:43,065 - WARNING - __main__ - Program warning log test
 2024-10-03 00:49:43,065 - INFO - __main__ - Program finished
 ```
+
+## Example4: Detail Project Structure with environment variables (json config file) update with abs path
+
+```sh
+PARENT_DIR = os.path.abspath(os.path.join(os.path.dirname( __file__ ), os.pardir))
+```
