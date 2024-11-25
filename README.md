@@ -116,3 +116,16 @@ pip install -r requirements.txt
 ```sh
 PARENT_DIR = os.path.abspath(os.path.join(os.path.dirname( __file__ ), os.pardir))
 ```
+
+## Example5: Project with Threadpool
+
+```sh
+(venv) C:\Users\xxx\projects_local\python\study_py_logging\src5_thread>python main.py
+2024-11-25 17:51:25,275 - INFO - __main__ - Program started
+2024-11-25 17:51:25,275 - INFO - data_processing.processor - Pre-processing data
+2024-11-25 17:51:25,275 - INFO - data_processing.processor - Data pre-processing complete
+2024-11-25 17:51:25,275 - INFO - model_training.trainer - Training model
+2024-11-25 17:51:25,275 - INFO - model_training.trainer - Model training complete
+2024-11-25 17:51:25,275 - INFO - __main__ - Main Pre-processing data
+2024-11-25 17:51:25,275 - INFO - __main__ - Main Data pre-processing complete
+```

@@ -1,0 +1,32 @@
+[
+  {
+    "device_type": "cisco_ios",
+    "ip": "172.31.210.11",
+    "username": "readonly",
+    "password": "password"
+  },
+  {
+    "device_type": "cisco_ios",
+    "ip": "172.31.210.12",
+    "username": "readonly",
+    "password": "password"
+  },
+  {
+    "device_type": "cisco_ios",
+    "ip": "172.31.210.13",
+    "username": "readonly",
+    "password": "password"
+  },
+  {
+    "device_type": "cisco_ios",
+    "ip": "172.31.210.14",
+    "username": "readonly",
+    "password": "password"
+  },
+  {
+    "device_type": "cisco_ios",
+    "ip": "172.31.210.99",
+    "username": "readonly",
+    "password": "password"
+  }
+]
